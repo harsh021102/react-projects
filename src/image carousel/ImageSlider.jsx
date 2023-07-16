@@ -9,11 +9,11 @@ const images = [
 const variant = {
     hiddenRight: {
         opacity: 0,
-        x: 100,
+        x: 200,
     },
     hiddenLeft: {
         opacity: 0,
-        x: -100,
+        x: -200,
     },
     visible:{
         opacity:1,
@@ -39,7 +39,7 @@ const ImageSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((prevCurrent) => (prevCurrent === images.length - 1 ? 0 : prevCurrent + 1));
-        }, 3000);
+        }, 6000);
         
         return () => {
             clearInterval(interval);
