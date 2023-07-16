@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import ImageSlider from "./image carousel/ImageSlider";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="bg-gradient-to-r from-sky-500 to-indigo-400 h-screen w-screen flex flex-col gap-4 justify-center items-center">
+        <h1 className="text-4xl font-sans text-white font-900 ">Image Carousel</h1>
+        <ImageSlider/>
+      </div>
+    );
 }
 
 export default App;
